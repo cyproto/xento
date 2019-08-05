@@ -1,0 +1,124 @@
+<html>
+    <head>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <style>
+            nav
+            {
+                
+                width: 100%;
+                height: 11%;
+                background: white;
+                padding: 0px;
+                float: right;
+                border-radius: 10px;
+            }
+            .navdiv
+            {
+                font-size: 15px;
+                display: inline;               
+            }
+            li
+            {
+                display: inline;
+                text-decoration: none;
+                padding: 10px;
+                color: white;
+                border-radius: 5px;            
+                background: white;
+            }
+            a
+            {
+                color: black;
+                text-decoration: none;
+            }
+            a:hover
+            {
+                text-decoration: none;
+            }
+            .topnavright
+            {
+                float: right;
+                padding-right: 20px; 
+            }
+            .default
+            {
+                background: black;
+                color: white;
+            }
+            .defbox1
+            {
+                background: #9933ff;
+                display: inline;
+            }
+            .defbox2
+            {
+                background: #ff884d;
+                display: inline;
+            }
+        </style>
+    </head>
+    <body style="padding: 3%;">
+        <div class="navdiv">
+            <section>
+                <nav>
+                    <ul type="none">
+                            <li><a href="#"><b><span style="font-size: large">Jobpply</span></b></a></li>
+                          <div class="topnavright">
+                            <li><a class = "" href="#home"><span style="color: #9933ff">Home</span></a></li>
+                            <li><a href="#about">About us</a></li>
+                            <li><a href="#candidates">Candidates</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li class="defbox1"><a href="#post"><span style="color:white">Post a Job</span></a></li>
+                            <li class="defbox2"><a href="#want"><span style="color:white">Want a Job</span></a></li>
+                            </div>
+                        </div>
+                    </ul>
+                </nav>
+            </section>    
+        </div>
+        <img style="vspace:20%">
+        <div style=" padding: 5%; background-image: url('undraw_work_time_lhoj.svg'); background-repeat: no-repeat; background-position: right; background-size: 60% 100%">
+            <p style="padding-top: 10%; font-size: 20px;">We have <span style="color:#ff884d">200,000</span> great job offers you deserve!</span></p>
+            <h1><b>Largest Job Site In <br>The World</b></h1>
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home"  aria-controls="pills-home" aria-selected="true">Find a Job</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile"  aria-controls="pills-profile" aria-selected="false">Find a Candidate</a>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="pills-tabContent" style="padding: 20px; padding-bottom: 10%;">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <input type="text" style="border-radius: 5px; width: 12%; height: 40px; outline: none; border-color: transparent;" placeholder="eg. Graphic, Webdev">
+                        <select name="" id="" style="border-radius: 5px; height: 40px; width:12%; outline: none; border-color: transparent;">
+                            <option value="">Category</option>
+                            <option value="">Full Time</option>
+                            <option value="">Part Time</option>
+                            <option value="">Freelance</option>
+                            <option value="">Internship</option>
+                            <option value="">Temporary</option>
+                            </select>
+                        <input type="text" style="border-radius: 5px; width: 12%; height: 40px; outline: none; border-color: transparent;" placeholder="Location">
+                        <input value="Search" type="submit" style="color:white; background: #ff884d; border-radius: 5px; width: 12%; height: 40px; outline: none; border-color: transparent;">
+                    </div>
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                            <input type="text" style="border-radius: 5px; width: 12%; height: 40px; outline: none; border-color: transparent;" placeholder="eg. John Doe">
+                            <select name="" id="" style="border-radius: 5px; height: 40px; width:12%; outline: none; border-color: transparent;">
+                                <option value="">Category</option>
+                                <option value="">Full Time</option>
+                                <option value="">Part Time</option>
+                                <option value="">Freelance</option>
+                                <option value="">Internship</option>
+                                <option value="">Temporary</option>
+                                </select>
+                            <input type="text" style="border-radius: 5px; width: 12%; height: 40px; outline: none; border-color: transparent;" placeholder="Location">
+                            <input value="Search" type="submit" style="color:white; background: #ff884d; border-radius: 5px; width: 12%; height: 40px; outline: none; border-color: transparent;"> 
+                    </div>
+                  </div>
+        </div>
+    </body>
+</html>
