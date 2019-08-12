@@ -4,21 +4,27 @@
             <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+            <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
         <style>
+            body
+            {
+              font-family: 'Montserrat', sans-serif;
+            }
             nav
             {
-                
                 width: 100%;
                 height: 11%;
-                background: white;
-                padding: 0px;
+                background: transparent;
                 float: right;
                 border-radius: 10px;
+                padding-right: 70px;
+                padding-left: 30px;
             }
             .navdiv
             {
                 font-size: 15px;
                 display: inline;               
+                font-weight: 700;       
             }
             li
             {
@@ -27,7 +33,7 @@
                 padding: 10px;
                 color: white;
                 border-radius: 5px;            
-                background: white;
+                background: transparent;
             }
             a
             {
@@ -70,14 +76,14 @@
             <section>
                 <nav>
                     <ul type="none">
-                            <li><a href="#"><b><span style="font-size: large">Jobpply</span></b></a></li>
+                            <li><a href="#"><b><span style="font-weight: bolder; font-size: 20px;">Jobpply</span></b></a></li>
                           <div class="topnavright">
                             <li><a class = "" href="assignment1.html"><span style="color: #6B64FF">Home</span></a></li>
                             <li><a href="#about">About us</a></li>
                             <li><a href="#candidates">Candidates</a></li>
                             <li><a href="#blog">Blog</a></li>
                             <li class="defbox1"><a href="assignment2.html"><span style="color:white;">Post a Job</span></a></li>
-                            <li class="defbox2"><a href="#want"><span style="color:white;">Want a Job</span></a></li>
+                            <li class="defbox2"><a href="assignment3.html"><span style="color:white;">Want a Job</span></a></li>
                             </div>
                         </div>
                     </ul>
@@ -85,19 +91,19 @@
             </section>    
         </div>
         <img style="vspace:30%">
-        <div style=" padding: 5%; background-image: url('undraw_work_time_lhoj.svg'); background-repeat: no-repeat; background-position: right; background-size: 60% 100%">
+        <div style=" padding: 5%; background-image: url('images/undraw_work_time_lhoj.svg'); background-repeat: no-repeat; background-position: right; background-size: 60% 100%">
             <p style="padding-top: 10%; font-size: 20px;">We have <span style="color:#FE6348">200,000</span> great job offers you deserve!</span></p>
             <h1><b>Largest Job Site In <br>The World</b></h1>
             <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                     <li class="nav-item">
-                      <a class="nav-link active" data-toggle="pill" href="#pills-home"  aria-controls="pills-home" aria-selected="true">Find a Job</a>
+                      <a class="nav-link active" data-toggle="pill" href="#pills-home">Find a Job</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" data-toggle="pill" href="#pills-profile"  aria-controls="pills-profile" aria-selected="false">Find a Candidate</a>
+                      <a class="nav-link" data-toggle="pill" href="#pills-profile">Find a Candidate</a>
                     </li>
                   </ul>
                   <div class="tab-content" id="pills-tabContent" style="padding: 20px; padding-bottom: 10%;">
-                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <div class="tab-pane fade show active" id="pills-home">
                         <input type="text" style="border-radius: 5px; width: 12%; height: 40px; outline: none; border-color: transparent;" placeholder="eg. Graphic, Webdev">
                         <select name="" id="" style="border-radius: 5px; height: 40px; width:12%; outline: none; border-color: transparent;">
                             <option value="">Category</option>
@@ -110,7 +116,7 @@
                         <input type="text" style="border-radius: 5px; width: 12%; height: 40px; outline: none; border-color: transparent;" placeholder="Location">
                         <input value="Search" type="submit" style="color:white; background: #FE6348; border-radius: 5px; width: 12%; height: 40px; outline: none; border-color: transparent;">
                     </div>
-                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <div class="tab-pane fade" id="pills-profile">
                             <input type="text" style="border-radius: 5px; width: 12%; height: 40px; outline: none; border-color: transparent;" placeholder="eg. John Doe">
                             <select name="" id="" style="border-radius: 5px; height: 40px; width:12%; outline: none; border-color: transparent;">
                                 <option value="">Category</option>
