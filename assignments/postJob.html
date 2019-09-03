@@ -1,131 +1,33 @@
 <html>
     <head>
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+            <link href="css/postJob.css" rel="stylesheet" type="text/css">
             <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-            <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-        <style>
-            body
-            {
-              font-family: 'Montserrat', sans-serif;
-            }
-            nav
-            {
-                width: 100%;
-                height: 11%;
-                background: transparent;
-                float: right;
-                border-radius: 10px;
-                padding-right: 70px;
-                padding-left: 30px;
-            }
-            .navdiv
-            {
-                font-size: 15px;
-                display: inline;               
-                font-weight: 600;         
-            }
-            li
-            {
-                display: inline;
-                text-decoration: none;
-                padding: 10px;
-                color: white;
-                border-radius: 5px;            
-                background: transparent;
-            }
-            a
-            {
-                color: black;
-                text-decoration: none;
-            }
-            a:hover
-            {
-                text-decoration: none;
-                color: black;
-            }
-            .topnavright
-            {
-                float: right;
-                padding-right: 20px; 
-            }
-            .default
-            {
-                background: black;
-                color: white;
-            }
-            .defbox1
-            {
-                background: #6B64FF;
-                display: inline;
-            }
-            .defbox2
-            {
-                background: #FE6348;
-                display: inline;
-            }
-            .modal-content 
-            {
-                position: relative;
-                background-color: #fefefe;
-                top: 25%;
-                margin: auto;
-                padding: 0;
-                border: none;
-                width: 50%;
-                height: 50%;
-                border-radius: 20px;
-                box-shadow: 8px 8px 8px 8px rgba(0,0,0,0.2),0 10px 10px 0 rgba(0,0,0,0.19);
-                animation-name: animateopen;
-                animation-duration: 0.4s;
-              }
-              @keyframes animateopen
-              {
-                from {top:-300; opacity:0}
-                to {top:25%; opacity:1}
-              }
-              .closebutton 
-              {
-                color: black;
-                font-size: 40px;
-                font-weight: bold;
-                margin-right: 50%;
-                margin-bottom: 5%;
-                transition: ease-in-out 0.5s all;
-                transform: rotate(0deg);               
-              }
-              .closebutton:hover,
-              .closebutton:focus 
-              {
-                color: #FE6348;
-                text-decoration: none;
-                cursor: pointer;
-                transform: rotate(360deg);
-              }
-              .modal-header 
-              {
-                padding: 2px 16px;
-                border-radius: 20px 20px 0px 0px;
-                border: none;
-                background-color: #6B64FF;
-                color: white;
-                padding-top: 10px;
-              }
-              .modal-body 
-              {
-                padding: 25px;
-              }
-              .modal-footer 
-              {
-                padding: 0px 16px;
-                color: white;
-                border: none;
-              }
-        </style>
+
     </head>
     <body>
+        <div id="showerr" class="showerror">
+          <div class="showerror-body">
+              Check if all the required form fields are filled with valid data.
+              <span class="showerror-dismiss" id="dismiss">Dismiss</span>
+          </div>
+        </div>
+        <div id="showerr1" class="jobtitleerror">
+          <div class="jobtitleerror-body">
+              Job Title field should not contain any number or special character.
+              <span class="jobtitleerror-dismiss" id="dismiss1">Dismiss</span>
+          </div>
+        </div>
+        <div id="submitsuccess" class="success">
+          <div class="success-body">
+            Submitted successfully!
+            <span class="success-dismiss" id="dismiss2">Cool !</span>
+          </div>
+        </div>
         <div style="background-image: url('images/bg_1.jpg'); background-repeat: no-repeat; background-size: 100% 100%;">
         <div style="padding: 3%; padding-right: 5%; padding-left: 7%;">
         <div class="navdiv">
@@ -154,7 +56,7 @@
             <div class="container">
               <div class="row">
                 <div class="col-md-12 col-lg-8">
-                       <form action="#" class="p-5 bg-white">
+                    <form class="p-5 bg-white" id="form" method="GET">
                     <div class="row form-group">
                       <div class="col-md-12 ">
                         <label for="option-price-1">
@@ -181,37 +83,43 @@
                     </div>
                     <div class="row form-group">
                       <div class="col-md-12 font-weight-bold"><h4>Job Type</h4></div>
-                      <div class="col-md-12 ">
+                        <div class="col-md-12 ">
                           <input type="radio" id="job-type-1" name="job-type"> Full Time
                       </div>
                       <div class="col-md-12 ">
                           <input type="radio" id="job-type-2" name="job-type"> Part Time
                       </div>
                       <div class="col-md-12 ">
-                          <input type="radio" id="job-type-3" name="job-type"> Freelance
+                          <input type="radio" id="job-type-3" name="job-type" class="hidecompprofile"> Freelance
                       </div>
                       <div class="col-md-12 ">
-                          <input type="radio" id="job-type-4" name="job-type"> Internship
+                          <input type="radio" id="job-type-4" name="job-type" class="hidecompprofile"> Internship
                       </div>
                       <div class="col-md-12 ">
-                          <input type="radio" id="job-type-5" name="job-type"> Termporary
-                    </div>
+                          <input type="radio" id="job-type-5" name="job-type" class="hidecompprofile"> Temporary
+                      </div>
                     </div>
                     <div class="row form-group mb-4">
                       <div class="col-md-12 font-weight-bold"><h4>Location</h4></div>
-                      <div class="col-md-12 ">
-                        <input type="text" onKeyPress="hidecursor()" id="hidecursor3" class="form-control" placeholder="Western City, UK">
-                      </div>
+                        <div class="col-md-12 ">
+                          <input type="text" onKeyPress="hidecursor()" id="hidecursor3" class="form-control" placeholder="Western City, UK">
+                        </div>
                     </div>
                     <div class="row form-group">
                       <div class="col-md-12 font-weight-bold"><h4>Job Description</h4></div>
-                      <div class="col-md-12 ">
-                        <textarea name="" onKeyPress="hidecursor()" id="hidecursor4" class="form-control" id="" cols="30" rows="5"></textarea>
+                        <div class="col-md-12 ">
+                          <textarea name="" onKeyPress="hidecursor()" id="hidecursor4" class="form-control" id="" cols="30" rows="5"></textarea>
+                      </div>
+                    </div>
+                    <div class="row form-group" id="companyprof">
+                      <div class="col-md-12 font-weight-bold"><h4>Company Profile</h4></div>
+                        <div class="col-md-12 ">
+                          <textarea name="" onKeyPress="hidecursor()" id="hidecursor5" class="form-control" id="" cols="30" rows="5"></textarea>
                       </div>
                     </div>
                     <div class="row form-group">
                       <div class="col-md-12">
-                        <input type="submit" value="Post" class="btn btn-primary  py-2 px-5" style="background: #6B64FF; border-color: transparent;">
+                        <input type="button" value="Post" class="btn btn-primary  py-2 px-5" onclick="return(validate(event))" style="background: #6B64FF; border-color: transparent;">
                       </div>
                     </div>
                   </form>
@@ -229,7 +137,7 @@
                   <div class="p-4 mb-3 bg-white">
                     <h3 class="h5 text-black mb-3">More Info</h3>
                     <p>This section of the documentation is intended to get you up-and-running with real-world GitHub API applications. We'll cover everything you need to know, from authentication, to manipulating results, to combining results with other apps.</p>
-                    <p><a href="#" class="btn btn-primary  py-2 px-4" style="background: #6B64FF; border-color: transparent;">Learn More</a></p>
+                    <p><a href="" class="btn btn-primary  py-2 px-4" style="background: #6B64FF; border-color: transparent;">Learn More</a></p>
                   </div>
                 </div>
               </div>
@@ -246,7 +154,7 @@
                       <div class="col-md-8">
                         <form action="#" class="subscribe-form">
                           <div class="form-group d-flex">
-                            <input id="hidecursor5" type="text" onKeyPress="hidecursor()" class="form-control" placeholder="Enter email address">
+                            <input id="hidecursor6" type="text" onKeyPress="hidecursor()" class="form-control" placeholder="Enter email address">
                             <input type="submit" value="Subscribe" class="btn btn-primary px-3" style="background: #FE6348; border-color: transparent;">
                           </div>
                         </form>
@@ -271,11 +179,14 @@
                   <p>6] Nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum.</p>
                 </div>
                 <div class="modal-footer">
-                  <span class="closebutton">&times;</span>
+                  <span class="closebutton">Close</span>
                 </div>
               </div>
             </div>
           <script src="js/hideCursor.js"></script>
           <script src="js/modal.js"></script>
+          <script src="js/validation.js"></script>
+          <script src="js/closeErrorMessage.js"></script>
+          <script src="js/companyProfile.js"></script>
     </body>
 </html>

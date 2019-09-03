@@ -1,0 +1,231 @@
+body
+{
+    font-family: 'Montserrat', sans-serif;
+}
+nav
+{
+    width: 100%;
+    height: 11%;
+    background: transparent;
+    float: right;
+    border-radius: 10px;
+    padding-right: 70px;
+    padding-left: 30px;
+}
+.navdiv
+{
+    font-size: 15px;
+    display: inline;               
+    font-weight: 600;         
+}
+li
+{
+    display: inline;
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;            
+    background: transparent;
+}
+a
+{
+    color: black;
+    text-decoration: none;
+}
+a:hover
+{
+    text-decoration: none;
+    color: black;
+}
+.topnavright
+{
+    float: right;
+    padding-right: 20px; 
+}
+.default
+{
+    background: black;
+    color: white;
+}
+.defbox1
+{
+    background: #6B64FF;
+    display: inline;
+}
+.defbox2
+{
+    background: #FE6348;
+    display: inline;
+}
+.modal-content 
+{
+    position: relative;
+    background-color: #fefefe;
+    top: 25%;
+    margin: auto;
+    overflow: auto;
+    padding: 0;
+    border: none;
+    width: 50%;
+    height: 50%;
+    border-radius: 20px;
+    box-shadow: 8px 8px 8px 8px rgba(0,0,0,0.2),0 10px 10px 0 rgba(0,0,0,0.19);
+    animation-name: animateopen;
+    animation-duration: 0.4s;
+    }
+    @keyframes animateopen
+    {
+    from {top:-300; opacity:0}
+    to {top:25%; opacity:1}
+    }
+    .closebutton 
+    {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 48%;
+    padding-bottom: 3%;
+    transition: ease-in-out 0.5s all;
+    }
+    .closebutton:hover,
+    .closebutton:focus 
+    {
+    color: #FE6348;
+    text-decoration: none;
+    cursor: pointer;
+    transform: scale(0.7);
+    }
+    .modal-header 
+    {
+    padding: 2px 16px;
+    border-radius: 20px 20px 0px 0px;
+    border: none;
+    background-color: #6B64FF;
+    color: white;
+    padding-top: 5px;
+    }
+    .modal-body 
+    {
+    padding: 20px;
+    padding-top: 20px;
+    }
+    .modal-footer 
+    {
+    padding: 0px;
+    color: white;
+    border: none;
+    }
+    .showerror
+    {
+    position: fixed;
+    height: 75px;
+    width: 100%;
+    margin: auto;
+    display: none;
+    z-index: 1000;
+    padding: 2%;
+    padding-bottom: 5px;
+    background: #ff6363;
+    color: #fefefe;
+    animation-name: openerror;
+    animation-duration: 0.5s;
+    border-radius: 0px 0px 5px 5px; 
+    }
+    .showerror-dismiss
+    {
+    float: right;
+    padding: 2px;
+    padding-top: 3px;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background: #6B64FF;
+    transition: ease-in-out 0.2s all;
+    }
+    .showerror-dismiss:hover
+    {
+    text-decoration: none;
+    cursor: pointer;
+    transform: scale(1.1);
+    }
+    @keyframes openerror 
+    {
+    from {top:-50%; opacity:0}
+    to {top:0px; opacity:1}
+    }
+    .jobtitleerror
+    {
+    position: fixed;
+    height: 75px;
+    width: 100%;
+    margin: auto;
+    display: none;
+    z-index: 1000;
+    padding: 2%;
+    padding-bottom: 5px;
+    background: #ff6363;
+    color: #fefefe;
+    animation-name: openerror;
+    animation-duration: 0.5s;
+    border-radius: 0px 0px 5px 5px; 
+    }
+    .jobtitleerror-dismiss
+    {
+    float: right;
+    padding: 2px;
+    padding-top: 3px;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background: #6B64FF;
+    transition: ease-in-out 0.2s all;
+    }
+    .jobtitleerror-dismiss:hover
+    {
+    text-decoration: none;
+    cursor: pointer;
+    transform: scale(1.1);
+    }
+    .success
+    {
+    position: fixed;
+    height: 75px;
+    width: 100%;
+    margin: auto;
+    display: none;
+    z-index: 1000;
+    padding: 2%;
+    padding-bottom: 5px;
+    background: #47e4bb;
+    color: #fefefe;
+    animation-name: openerror;
+    animation-duration: 0.5s;
+    border-radius: 0px 0px 5px 5px; 
+    }
+    .success-dismiss
+    {
+    float: right;
+    padding: 2px;
+    padding-top: 3px;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background: #6B64FF;
+    transition: ease-in-out 0.2s all;
+    }
+    .success-dismiss:hover
+    {
+    text-decoration: none;
+    cursor: pointer;
+    transform: scale(1.1);
+    }
+    #companyprof
+    {
+    display: none;
+    }
