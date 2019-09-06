@@ -16,7 +16,7 @@ nav
 {
     font-size: 15px;
     display: inline;               
-    font-weight: 600;         
+    font-weight: 500;         
 }
 li
 {
@@ -72,51 +72,51 @@ a:hover
     box-shadow: 8px 8px 8px 8px rgba(0,0,0,0.2),0 10px 10px 0 rgba(0,0,0,0.19);
     animation-name: animateopen;
     animation-duration: 0.4s;
-    }
+}
     @keyframes animateopen
-    {
+{
     from {top:-300; opacity:0}
     to {top:25%; opacity:1}
-    }
+}
     .closebutton 
-    {
+{
     color: black;
     font-size: 20px;
     font-weight: bold;
     margin-right: 48%;
     padding-bottom: 3%;
     transition: ease-in-out 0.5s all;
-    }
+}
     .closebutton:hover,
     .closebutton:focus 
-    {
+{
     color: #FE6348;
     text-decoration: none;
     cursor: pointer;
     transform: scale(0.7);
-    }
+}
     .modal-header 
-    {
+{
     padding: 2px 16px;
     border-radius: 20px 20px 0px 0px;
     border: none;
     background-color: #6B64FF;
     color: white;
     padding-top: 5px;
-    }
+}
     .modal-body 
-    {
+{
     padding: 20px;
     padding-top: 20px;
-    }
+}
     .modal-footer 
-    {
+{
     padding: 0px;
     color: white;
     border: none;
-    }
+}
     .showerror
-    {
+{
     position: fixed;
     height: 75px;
     width: 100%;
@@ -130,9 +130,9 @@ a:hover
     animation-name: openerror;
     animation-duration: 0.5s;
     border-radius: 0px 0px 5px 5px; 
-    }
+}
     .showerror-dismiss
-    {
+{
     float: right;
     padding: 2px;
     padding-top: 3px;
@@ -143,20 +143,20 @@ a:hover
     border-radius: 5px;
     background: #6B64FF;
     transition: ease-in-out 0.2s all;
-    }
+}
     .showerror-dismiss:hover
-    {
+{
     text-decoration: none;
     cursor: pointer;
     transform: scale(1.1);
-    }
+}
     @keyframes openerror 
-    {
+{
     from {top:-50%; opacity:0}
     to {top:0px; opacity:1}
-    }
+}
     .jobtitleerror
-    {
+{
     position: fixed;
     height: 75px;
     width: 100%;
@@ -170,9 +170,9 @@ a:hover
     animation-name: openerror;
     animation-duration: 0.5s;
     border-radius: 0px 0px 5px 5px; 
-    }
+}
     .jobtitleerror-dismiss
-    {
+{
     float: right;
     padding: 2px;
     padding-top: 3px;
@@ -183,15 +183,15 @@ a:hover
     border-radius: 5px;
     background: #6B64FF;
     transition: ease-in-out 0.2s all;
-    }
+}
     .jobtitleerror-dismiss:hover
-    {
+{
     text-decoration: none;
     cursor: pointer;
     transform: scale(1.1);
-    }
+}
     .success
-    {
+{
     position: fixed;
     height: 75px;
     width: 100%;
@@ -205,9 +205,9 @@ a:hover
     animation-name: openerror;
     animation-duration: 0.5s;
     border-radius: 0px 0px 5px 5px; 
-    }
+}
     .success-dismiss
-    {
+{
     float: right;
     padding: 2px;
     padding-top: 3px;
@@ -218,14 +218,14 @@ a:hover
     border-radius: 5px;
     background: #6B64FF;
     transition: ease-in-out 0.2s all;
-    }
+}
     .success-dismiss:hover
-    {
+{
     text-decoration: none;
     cursor: pointer;
     transform: scale(1.1);
-    }
+}
     #companyprof
-    {
+{
     display: none;
-    }
+}
