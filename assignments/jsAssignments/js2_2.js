@@ -20,5 +20,3 @@ document.getElementById("dismiss2").onclick = function()
     document.getElementById("submitsuccess").style.display='none';
     location.reload();
 }
-
-

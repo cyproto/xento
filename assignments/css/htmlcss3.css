@@ -154,3 +154,65 @@ hr {
 {
     color: red;
 }
+.modal-content 
+{
+    position: relative;
+    background-color: #fefefe;
+    top: 25%;
+    margin: auto;
+    overflow: auto;
+    padding: 0;
+    border: none;
+    width: 50%;
+    height: 50%;
+    border-radius: 20px;
+    box-shadow: 8px 8px 8px 8px rgba(0,0,0,0.2),0 10px 10px 0 rgba(0,0,0,0.19);
+    animation-name: animateopen;
+    animation-duration: 0.4s;
+}
+@keyframes animateopen
+{
+    from {top:-300; opacity:0}
+    to {top:25%; opacity:1}
+}
+.closebutton 
+{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 48%;
+    padding-bottom: 3%;
+    transition: ease-in-out 0.5s all;
+}
+.closebutton:hover,
+.closebutton:focus 
+{
+    color: #FE6348;
+    text-decoration: none;
+    cursor: pointer;
+    transform: scale(0.7);
+}
+.modal-header 
+{
+    padding: 2px 16px;
+    border-radius: 20px 20px 0px 0px;
+    border: none;
+    background-color: #6B64FF;
+    color: white;
+    padding-top: 5px;
+}
+.modal-body 
+{
+    padding: 20px;
+    padding-top: 20px;
+}
+.modal-footer 
+{
+    padding: 0px;
+    color: white;
+    border: none;
+}
+.job:hover
+{
+    cursor: pointer;
+}
