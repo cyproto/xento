@@ -1,12 +1,12 @@
 setTimeout(function(){
     document.getElementById("showerr").style.display='none';
-}, 5000);
+}, 10000);
 setTimeout(function(){
     document.getElementById("showerr1").style.display='none';
-}, 5000);
+}, 10000);
 setTimeout(function(){
     document.getElementById("submitsuccess").style.display='none';
-}, 5000);
+}, 10000);
 document.getElementById("dismiss").onclick = function()
 {
     document.getElementById("showerr").style.display='none';
