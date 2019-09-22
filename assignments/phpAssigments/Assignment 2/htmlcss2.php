@@ -32,8 +32,7 @@
                     }
                     else
                     {
-                        include 'phpAssignments/CPostJob.php';
-                        abc($salary,$job_title,$company_name,$job_type);
+                        unset($_POST);
                     }
             }
       ?>
@@ -70,7 +69,7 @@
                             <li><a href="#candidates">Candidates</a></li>
                             <li><a href="#blog">Blog</a></li>
                             <li class="defbox1"><a href="htmlcss2.php"><span style="color:white">Post a Job</span></a></li>
-                            <li class="defbox2"><a href="#"><span style="color:white">Want a Job</span></a></li>
+                            <li class="defbox2"><a href="htmlcss3.php"><span style="color:white">Want a Job</span></a></li>
                             </div>
                     </ul>
                 </nav>
