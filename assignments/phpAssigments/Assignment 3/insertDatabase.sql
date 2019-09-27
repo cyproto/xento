@@ -1,0 +1,6 @@
+--Some dummy values
+
+INSERT INTO jobs(salary,job_title,company,job_type,location,job_description) values('300','FrontEnd Development','FACEBOOK, INC','Partime','WESTERN CITY, UK','This section of the documentation is intended to get you up-and-running with real-world GitHub API applications. Well cover everything you need to know');
+INSERT INTO jobs(salary,job_title,company,job_type,location,job_description) values('500','Full stack developer','Google, INC','Fulltime','WESTERN CITY, UK','This section of the documentation is intended to get you up-and-running with real-world GitHub API applications. Well cover everything you need to know');
+INSERT INTO jobs(salary,job_title,company,job_type,location,job_description) values('300','Open Source','NY times, INC','Temporary','WESTERN CITY, UK','This section of the documentation is intended to get you up-and-running with real-world GitHub API applications. Well cover everything you need to know');
+INSERT INTO jobs(salary,job_title,company,job_type,location,job_description) values('300','Backend dev','Xento sys','Internship','WESTERN CITY, UK','This section of the documentation is intended to get you up-and-running with real-world GitHub API applications. Well cover everything you need to know');
